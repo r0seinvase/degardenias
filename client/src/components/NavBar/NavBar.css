@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Ari";
+    src: url(../../Fonts/Ari.ttf);
+  }
+  
+  @font-face {
+    font-family: "Retrospective";
+    src: url(../../Fonts/Retrospective.ttf);
+  }
+  
+  @font-face {
+    font-family: "Mollie";
+    src: url(../../Fonts/Mollie.ttf);
+  }
+  
+  @font-face {
+    font-family: "Mikodacs";
+    src: url(../../Fonts/Mikodacs.ttf);
+  }
+  
+  @font-face {
+    font-family: "Hello";
+    src: url(../../Fonts/Hello.ttf);
+  }
+  
+.navigation{
+    background-color: #F4CBC6
+    }
+    
+    .navbargrid{
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(8, .5fr);
+      justify-content: space-around;
+      align-items: center;
+      justify-items: center;
+    }
+    
+    .navlink {
+      color: inherit;
+      display: block;
+      text-decoration: none;
+      color: #134611;
+      font-weight: bold;
+      font-family: 'Hello';
+      font-size: 1.5em;
+    }
+    
+    .navlink--is-active {
+      background-color: rgb(80, 68, 68);
+      border-radius: 999em;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      
+    }
