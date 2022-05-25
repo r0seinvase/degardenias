@@ -3,13 +3,22 @@ import './NavBar.css'
 
 function NavBar() {
   return (
+    <div>
+    <input type="checkbox" id="ham-menu"/>
+      <label for="ham-menu">
+        <div class="hide-des">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </div>
 
-    <nav className="navigation">
-      <div className="navbargrid">
-        {/* <ul className="navigation__list navigation__list--inline"> */}
-        <Link to="/" className="navlink">
-          De Gardenias
-        </Link>
+      </label>
+      <div class="full-page-green"></div>
+      <div class="ham-menu">
+        <ul class="centre-text bold-text">
         <Link to="/shelfdecor" className="navlink">
           Shelf Decore
         </Link>
@@ -31,9 +40,9 @@ function NavBar() {
         <Link to="/checkout" className="navlink">
           Checkout
         </Link>
-        {/* </ul> */}
-      </div>
-    </nav>
+      </ul>
+    </div>
+  </div>
   );
 }
 

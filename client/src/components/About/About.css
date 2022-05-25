@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Dunford";
+    src: url(../../Fonts/Dunford.ttf);
+    }
+
+@font-face {
+    font-family: "Oldland";
+    src: url(../../Fonts/Oldland.ttf);
+    }
+    
+    @font-face {
+        font-family: "Retrospective";
+        src: url(../../Fonts/Retrospective.ttf);
+    }
+
+.love-letter-grid-heading{
+    font-family: "Dunford";
+}
+.love-letter-grid-paragraph{
+    font-family: "Retrospective";
+    font-size: 12px;
+}
+.love-letter-grid-sign-off{
+    font-family: "Dunford";
+}

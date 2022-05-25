@@ -1,5 +1,5 @@
 import Bedding from "./Bedding"
-import Home from "./Home"
+import Home from "../Home/Home"
 import Kitchen from "./Kitchen"
 import ShelfDecor from "./ShelfDecor"
 import TableDecor from './TableDecor';
