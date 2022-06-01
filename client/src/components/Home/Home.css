@@ -1,4 +1,28 @@
-/* .body {
-background-image: url("Images/Home.JPG");
-background-repeat: no-repeat;
-} */
+.love-letter-grid-sign-off{
+    font-family: "Dunford";
+}
+
+.home-page-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0 auto;
+    padding: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.home-page-grid-left{
+    top: 0;
+}
+
+.home-page-grid-heading{
+    font-family: "Dunford";
+    color: #b4303067;
+    font-size: 75px;
+}
+.home-page-grid-subheadding{
+    font-family: "Dunford";
+    font-size: 55px;
+    color:black;
+    margin-left: 65%;
+}

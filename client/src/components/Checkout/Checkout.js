@@ -4,7 +4,7 @@ import PayPal from "./PayPal"
 function Checkout() {
   return (
     <div >
-     <div >
+     <div className="checkout-grid">
             <ShoppingCart/>
             <PayPal/>
         </div>

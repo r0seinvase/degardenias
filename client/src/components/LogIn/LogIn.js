@@ -32,13 +32,13 @@ function Login({ setCurrentUser, currentUser }) {
   return (
     <>
       {currentUser ? (
-        <Home />
+        <Home currentUser={currentUser} />
       ) : (
-        <div className="card">
-          <h4 className="title">Log In!</h4>
+        <div>
+          <h4 >Log In!</h4>
           <form onSubmit={(e) => handleSubmit(e)}>
             {errorMessage && <p style={{ color: "#ce3030" }}>{errorMessage}</p>}
-            <div className="field">
+            <div>
               <input
                 autoComplete="off"
                 placeholder="E-mail"
@@ -48,18 +48,17 @@ function Login({ setCurrentUser, currentUser }) {
                 value={user.email}
               />
             </div>
-            <div className="field">
+            <div>
               <input
                 autoComplete="off"
                 placeholder="Password"
-                className="input-field"
                 type="password"
                 onChange={(e) => setUser({ ...user, password: e.target.value })}
                 value={user.password_digest}
               />
             </div>
-            <input className="btn" type="submit" value="Login!" />
-            <Link className="btn-link" to="/SignUp">
+            <input type="submit" value="Login!" />
+            <Link to="/SignUp">
               Sign up!
             </Link>
           </form>
