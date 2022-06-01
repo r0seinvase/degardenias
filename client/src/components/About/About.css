@@ -13,13 +13,29 @@
         src: url(../../Fonts/Retrospective.ttf);
     }
 
+.about-grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding-left: 13%;
+}
+
 .love-letter-grid-heading{
     font-family: "Dunford";
+    font-size:70px;
+    color:black;
 }
 .love-letter-grid-paragraph{
     font-family: "Retrospective";
-    font-size: 12px;
+    font-size: 28px;
+    border: 18px dotted green;
+    width: 100%;
+    text-align: center;
+  
 }
 .love-letter-grid-sign-off{
     font-family: "Dunford";
+    font-size: 60px;
+    color: black;
 }

@@ -1,0 +1,8 @@
+.checkout-grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding-left: 13%;
+    padding-top: 25%;
+}

@@ -1,7 +1,7 @@
 
 function ShoppingCart(){
     return(
-        <div>
+        <div className="checkout-grid-cart">
         
         </div>
     )

@@ -1,9 +1,9 @@
 class SessionsController < ApplicationController
-
+    skip_before_action :authorized
     def create
        
+        # byebug
         user = User.find_by!(email: params[:email])
-  
         if user&.authenticate(params[:password])
              
             session[:current_user] = user.id
