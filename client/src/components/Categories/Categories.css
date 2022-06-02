@@ -18,18 +18,22 @@
 }
 
 .card{
-    width: 100%;
+    width: 75%;
+    border: 1px solid black;
+    border-radius: 5%;
 }
 .card img{
-    margin-right:2050%;
+    margin-top:1%;
     width:50%;
+    object-fit: contain;
 }
 .card-name{
-    font-family: Cardo,serif;
+    font-family: "Brash";
+    /* font-family: Cardo,serif;
     font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
-    text-align: left;
+    font-style: normal; */
+    font-size: 18px;
+    text-align: center;
 }
 .card-type{
     font-family: Cardo,serif;
@@ -37,24 +41,30 @@
     font-style: normal;
     font-size: 15px;
     color: rgb(170, 168, 168);
-    text-align: left;
+    text-align: center;
 }
 .card-price{
     font-family: Cardo,serif;
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
-    text-align: left;
+    text-align: center;
 }
 .card-status-false{
     font-family: "Brash";
     font-size: 18px;
-    text-align: left;
+    text-align: center;
     color: rgb(16, 28, 199);
 }
 .card-status-true{
     font-family: "Brash";
     font-size: 18px;
-    text-align: left;
-    color: rgb(80, 211, 44);
+    text-align: center;
+    color: green;
+}
+.card-basket{
+    border: none;
+    background-color:white;
+    font-size: 30px;
+    color:green;
 }
