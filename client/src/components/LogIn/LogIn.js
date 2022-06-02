@@ -1,6 +1,6 @@
 import './Login.css';
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Home from '../Home/Home';
 
 function Login({ setCurrentUser, currentUser }) {
@@ -34,8 +34,8 @@ function Login({ setCurrentUser, currentUser }) {
       {currentUser ? (
         <Home currentUser={currentUser} />
       ) : (
-        <div>
-          <h4 >Log In!</h4>
+        <div className="input-group">
+          <h4 className="input-title" >log In</h4>
           <form onSubmit={(e) => handleSubmit(e)}>
             {errorMessage && <p style={{ color: "#ce3030" }}>{errorMessage}</p>}
             <div>
@@ -53,14 +53,17 @@ function Login({ setCurrentUser, currentUser }) {
                 autoComplete="off"
                 placeholder="Password"
                 type="password"
+                className="input-field"
                 onChange={(e) => setUser({ ...user, password: e.target.value })}
                 value={user.password_digest}
               />
             </div>
-            <input type="submit" value="Login!" />
-            <Link to="/SignUp">
+            <input type="submit" value="Login!" className="button" />
+            <div>
+            <Link className="link"to="/SignUp">
               Sign up!
             </Link>
+            </div>
           </form>
         </div>
       )}

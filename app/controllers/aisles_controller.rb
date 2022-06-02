@@ -47,6 +47,6 @@ class AislesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def aisle_params
-      params.require(:aisle).permit(:name)
+      params.require(:aisle).permit(:name, :item_id)
     end
 end

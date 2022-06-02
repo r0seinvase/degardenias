@@ -6,7 +6,7 @@ function Home({ currentUser }) {
             <div className="home-page-grid-left">
                 {/* <h1>welcome {currentUser.firstname} !</h1> */}
                 <h1 className="home-page-grid-heading"> Welcome to Our House </h1>
-                <h2 className="home-page-grid-subheadding">New Arrivals</h2>
+                <h2 className="home-page-grid-subheadding">New Arrivals Ready for Pickup, Houston!</h2>
             </div>
             <div className="home-page-grid-right">
                 <img
