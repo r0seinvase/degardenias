@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
 
+  resources :carts
   resources :order_items, only: [:index, :show, :create, :update, :destroy]
   resources :orders, only: [:index, :show, :create, :update, :destroy]
   resources :aisles, only: [:index, :show]
@@ -16,6 +17,7 @@ Rails.application.routes.draw do
   get '/aisles', to: 'aisles#index'
   get '/aisles/:aisles_id/items', to: 'aisles#items_index'
   get '/orders', to: 'orders#index'
+  get '/carts', to: 'carts#index'
 end 
 
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Home from "../Home/Home";
 import LogIn from "../LogIn/LogIn";
+import { Link } from "react-router-dom";
+
 function SignUp({ setCurrentUser, currentUser }) {
     const [user, setUser] = useState({
         username: "",
@@ -32,8 +33,8 @@ function SignUp({ setCurrentUser, currentUser }) {
             {currentUser ? (
                 <LogIn />
             ) : (
-                <div className="card">
-                    <h4 className="title">Sign Up!</h4>
+                <div className="input-group">
+                    <h4 className="input-title">Sign Up!</h4>
                     <form onSubmit={(e) => handleSubmit(e)}>
                         <div className="field">
                             <input
@@ -75,7 +76,12 @@ function SignUp({ setCurrentUser, currentUser }) {
                                 value={user.password}
                             />
                         </div>
-                        <input className="btn" type="submit" value="Sign Up!" />
+                        <input className="button" type="submit" value="Sign Up!" />
+                        <div>
+                        <Link className="link" to="/LogIn">
+              Already have an account?
+            </Link>
+            </div>
                     </form>
                 </div>
             )}
